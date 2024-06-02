@@ -52,9 +52,9 @@ This is a custom bot, tested with the Gemini functionality, consuming the API.
   Retrieving User Input:
 
     def get_response(query):
-    text_input = dialogflow.TextInput(text=query, language_code="es")
-    query_input = dialogflow.QueryInput(text=text_input)
-    return session_client.detect_intent(session=session, query_input=query_input).query_result.fulfillment_text
+      text_input = dialogflow.TextInput(text=query, language_code="es")
+      query_input = dialogflow.QueryInput(text=text_input)
+      return session_client.detect_intent(session=session, query_input=query_input).query_result.fulfillment_text
 
 ## Example Usage
 
